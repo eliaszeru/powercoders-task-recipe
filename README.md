@@ -1,7 +1,3 @@
-Thank you for sharing the link to your GitHub repository. Based on the repository URL, here's a more customized version of the README with your GitHub details included:
-
----
-
 # My Recipe Website
 
 Welcome to **My Recipe Website**, a platform where you can explore both traditional and modern recipes! This website provides step-by-step instructions for making popular dishes, along with ingredient lists and prices. It's designed for anyone looking to try new recipes or explore different culinary styles!
@@ -89,11 +85,3 @@ Feel free to fork the repository and submit pull requests if you have improvemen
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-### Notes:
-
-- The link `https://github.com/eliaszeru/powercoders-task-recipe.git` is used for cloning the repository.
-- You can replace placeholders like `screenshots/home-page.png` with actual image files if available in your repository.
-
-Let me know if you need further adjustments or additional details in the README!
