@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Website</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>My Recipe Website</h1>
+    <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#traditional">Traditional</a></li>
+        <li><a href="#modern">Modern</a></li>
+        <li><a href="#ingredients">Ingredients & Price</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+</header>
+
+
+<section id="home">
+    <div class="intro">
+    <h2 class="tekur">Welcome to My Recipe Website</h2>
+    <p>This is a recipe website that I created as part of the PowerCoders task. Explore traditional and modern recipes and learn how to make your favorite foods!</p>
+    </div>
+</section>
+
+
+<section id="traditional">
+    <h2>Traditional Recipes</h2>
+    <div class="recipe">
+    <img src="Doro-Wet-Served-1.png" alt="Doro Wot" class="food-photo">
+    <h3>Doro Wot</h3>
+    <p class="click-prompt" onclick="showSteps('doro_wot')">Click here to see the step-by-step recipe</p>
+    <div id="doro_wot_steps" class="recipe-steps" style="display:none;">
+        <h4>Steps:</h4>
+        <p>1. Heat oil in a pan and sauté onions until golden.</p>
+        <p>2. Add garlic, ginger, and berbere spice, and cook for a few minutes.</p>
+        <p>3. Add chicken and cook until golden brown.</p>
+        <p>4. Add water, cover, and simmer until chicken is cooked through.</p>
+    </div>
+    </div>
+
+    <div class="recipe">
+    <img src="dullet.webp" alt="Dulet" class="food-photo">
+    <h3>Dulet</h3>
+    <p class="click-prompt" onclick="showSteps('dulet')">Click here to see the step-by-step recipe</p>
+    <div id="dulet_steps" class="recipe-steps" style="display:none;">
+        <h4>Steps:</h4>
+        <p>1. Sauté onions and spices in oil.</p>
+        <p>2. Add finely chopped beef and cook until browned.</p>
+        <p>3. Stir in chili, salt, and pepper to taste.</p>
+        <p>4. Serve hot with injera or bread.</p>
+    </div>
+    </div>
+</section>
+
+
+<section id="modern">
+    <h2>Modern Recipes</h2>
+    <div class="recipe">
+    <img src="Pizza-3007395.jpg" alt="Pizza" class="food-photo">
+    <h3>Pizza</h3>
+    <p class="click-prompt" onclick="showSteps('pizza')">Click here to see the step-by-step recipe</p>
+    <div id="pizza_steps" class="recipe-steps" style="display:none;">
+        <h4>Steps:</h4>
+        <p>1. Prepare the dough and let it rise for 1 hour.</p>
+        <p>2. Roll the dough into a pizza base and add sauce.</p>
+        <p>3. Add cheese, toppings, and bake in a preheated oven.</p>
+        <p>4. Remove from the oven, slice, and serve hot.</p>
+    </div>
+    </div>
+
+    <div class="recipe">
+    <img src="burger.webp" alt="Burger" class="food-photo">
+    <h3>Burger</h3>
+    <p class="click-prompt" onclick="showSteps('burger')">Click here to see the step-by-step recipe</p>
+    <div id="burger_steps" class="recipe-steps" style="display:none;">
+        <h4>Steps:</h4>
+        <p>1. Form patties from ground beef and season.</p>
+        <p>2. Grill patties until cooked through.</p>
+        <p>3. Toast burger buns and assemble with toppings.</p>
+        <p>4. Serve with fries or chips.</p>
+    </div>
+    </div>
+</section>
+
+
+<section id="ingredients">
+    <h2>Ingredients & Price</h2>
+    <div class="ingredient-column">
+    <h3>Doro Wot Ingredients</h3>
+    <ul>
+        <li>Chicken (CHF 10)</li>
+        <li>Berbere spice (CHF 2)</li>
+        <li>Onion (CHF 1)</li>
+        <li>Garlic (CHF 0.5)</li>
+        <li>Ginger (CHF 1)</li>
+    </ul>
+    <p>Total Price: CHF 14.5</p>
+    </div>
+    <div class="ingredient-column">
+    <h3>Dulet Ingredients</h3>
+    <ul>
+        <li>Beef (CHF 12)</li>
+        <li>Spices (CHF 3)</li>
+        <li>Onion (CHF 1)</li>
+        <li>Chili (CHF 1)</li>
+    </ul>
+    <p>Total Price: CHF 17</p>
+    </div>
+    <div class="ingredient-column">
+    <h3>Pizza Ingredients</h3>
+    <ul>
+        <li>Flour (CHF 3)</li>
+        <li>Cheese (CHF 5)</li>
+        <li>Tomato sauce (CHF 2)</li>
+        <li>Olives (CHF 3)</li>
+        <li>Peppers (CHF 1)</li>
+    </ul>
+    <p>Total Price: CHF 14</p>
+    </div>
+    <div class="ingredient-column">
+    <h3>Burger Ingredients</h3>
+    <ul>
+        <li>Ground beef (CHF 6)</li>
+        <li>Burger buns (CHF 2)</li>
+        <li>Lettuce (CHF 1)</li>
+        <li>Tomato (CHF 1)</li>
+        <li>Cheese (CHF 2)</li>
+    </ul>
+    <p>Total Price: CHF 12</p>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/xeoopzae" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send</button>
+    </form>  </section>
+
+<footer>
+    <p>&copy; Elias 2025</p>
+</footer>
+
+</body>
+</html>

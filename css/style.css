@@ -1,0 +1,269 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ff5722;
+}
+
+/* Home Section with Background Image */
+#home {
+    width: 100%;
+    height: 500px;
+    background-image: url("/muk.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+#home .intro {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Sections */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.section {
+    display: none;
+}
+
+.section.visible {
+    display: block;
+}
+
+/* Recipe Styles */
+h2 {
+    color: #ff7043;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recipe {
+    cursor: pointer;
+    margin: 20px 0;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.recipe:hover {
+    transform: translateY(-5px);
+}
+
+.food-photo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.click-prompt {
+    color: #ff5722;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+/* Ingredients & Price Section - New Layout */
+#ingredients {
+    width: 100%;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ingredient-column {
+    background: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-column h3 {
+    color: #ff5722;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.ingredient-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredient-column li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.ingredient-column li strong {
+    color: #ff5722;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff5722;
+    outline: none;
+}
+
+form button {
+    background-color: #ff7043;
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff5722;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .recipe {
+        padding: 20px;
+    }
+
+    .food-photo {
+        width: 100%;
+    }
+
+    #ingredients {
+        grid-template-columns: 1fr; /* Stack the columns on small screens */
+        align-items: center;
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+.tekur{
+    color: greenyellow;
+}
