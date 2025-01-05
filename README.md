@@ -11,13 +11,6 @@ This website was created as part of the **PowerCoders selection process** task.
 - **Ingredients & Prices**: Provides a list of ingredients with prices for each recipe.
 - **Contact Form**: A contact form to send messages and feedback.
 
-## Screenshots
-
-![Home Page](screenshots/home-page.png)
-*Homepage showcasing the welcome section.*
-
-![Recipe Section](screenshots/recipe-section.png)
-*Traditional and modern recipe listings with images.*
 
 ## Technologies Used
 
@@ -48,7 +41,7 @@ To run the website locally, follow these steps:
    open index.html
    ```
 
-Alternatively, you can run the website on a local server using a tool like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) (VS Code extension).
+
 
 ## File Structure
 
@@ -81,7 +74,4 @@ Feel free to fork the repository and submit pull requests if you have improvemen
 4. Push to the branch (`git push origin feature-branch`).
 5. Submit a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
